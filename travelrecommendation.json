@@ -92,13 +92,13 @@
     {
         "id": 3,
         "name": "Whitehaven Beach, Australia",
-        "imageUrl": "https://images.unsplash.com/photo-1561027104-aa69b72a7174?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "imageUrl": "https://images.unsplash.com/photo-1596573677494-accc8fbe89e8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29wYWNhYmFuYSUyMGJlYWNofGVufDB8fDB8fHww",
         "description": "Known for its crystal-clear waters and pristine white sands, located in the heart of the Great Barrier Reef."
     },
     {
         "id": 4,
         "name": "Anse Source d'Argent, Seychelles",
-        "imageUrl": "https://unsplash.com/photos/a-flag-on-a-beach-S8Dsapk7C8k",
+        "imageUrl": "https://images.unsplash.com/photo-1596573677494-accc8fbe89e8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29wYWNhYmFuYSUyMGJlYWNofGVufDB8fDB8fHww",
         "description": "A beautiful beach famous for its pink sands, clear waters, and unique granite formations."
     }
 ]

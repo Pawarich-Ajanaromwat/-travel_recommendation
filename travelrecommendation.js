@@ -1,82 +1,88 @@
-let searchbtn = document.getElementById("searchbtn");
-let clearbtn = document.getElementById("clearbtn");
-let result = document.getElementById("resultContainer");
-let mydiv = document.getElementById("dropdown");
-let close = document.getElementById("close-btn");
-let query = document.getElementById("searchinput");
+let searchBtn = document.getElementById("searchbtn");
+let clearBtn = document.getElementById("clearbtn");
+let resultContainer = document.getElementById("resultContainer");
+let dropdown = document.getElementById("dropdown");
+let closeBtn = document.getElementById("close-btn");
+let searchInput = document.getElementById("searchinput");
 
-const clearsearch = () => {
-  query.value = "";
-  mydiv.style.display = "none";
+// Clear search input and hide results
+const clearSearch = () => {
+  searchInput.value = "";
+  dropdown.style.display = "none";
   console.log("Clearing");
 };
 
-clearbtn.addEventListener("click", clearsearch);
+clearBtn.addEventListener("click", clearSearch);
 
+// Display search result
 const showResult = (name, img, info) => {
-  if (mydiv.style.display === "none" || mydiv.style.display === "") {
-    mydiv.style.display = "block";
-  } else {
-    mydiv.style.display = "none";
-  }
-  result.innerHTML = `
+  dropdown.style.display = "block";
+  resultContainer.innerHTML = `
     <h2 class="title">${name}</h2>
-    <img class="search-img" src=${img} alt="sofia">
+    <img class="search-img" src="${img}" alt="${name}">
     <p class="description">${info}</p>
   `;
 };
 
+// Hide dropdown and clear input
 const closeDropdown = () => {
-  mydiv.style.display = "none";
-  query.value = "";
+  dropdown.style.display = "none";
+  searchInput.value = "";
 };
 
-close.addEventListener("click", closeDropdown);
+closeBtn.addEventListener("click", closeDropdown);
 
-const searchError = () => {
-  if (mydiv.style.display === "none" || mydiv.style.display === "") {
-    mydiv.style.display = "block";
-  } else {
-    mydiv.style.display = "none";
-  }
-
-  result.innerHTML = `<p class="notfound">Sorry we can't find your search</p>`;
+// Display error when no results found
+const showSearchError = () => {
+  dropdown.style.display = "block";
+  resultContainer.innerHTML = `<p class="notfound">Sorry, we can't find your search</p>`;
 };
 
-fetch("travelrecommendation.json")
-  .then((res) => res.json())
-  .then((data) => {
+// Fetch data and search functionality
+const fetchDataAndInitializeSearch = async () => {
+  try {
+    const response = await fetch("travelrecommendation.json");
+    const data = await response.json();
+
     const search = () => {
-      let searchQuery = query.value.toLowerCase();
-      let notfound = true;
+      const searchQuery = searchInput.value.trim().toLowerCase();
+      if (!searchQuery) return; // Exit if search input is empty
 
-      data.countries.map((country) => {
-        country.cities.map((city) => {
+      let notFound = true;
+
+      data.countries.forEach((country) => {
+        country.cities.forEach((city) => {
           if (city.name.toLowerCase().includes(searchQuery)) {
             showResult(city.name, city.imageUrl, city.description);
-            notfound = false;
+            notFound = false;
           }
         });
       });
 
-      data.temples.map((temple) => {
+      data.temples.forEach((temple) => {
         if (temple.name.toLowerCase().includes(searchQuery)) {
           showResult(temple.name, temple.imageUrl, temple.description);
-          notfound = false;
+          notFound = false;
         }
       });
 
-      data.beaches.map((beach) => {
+      data.beaches.forEach((beach) => {
         if (beach.name.toLowerCase().includes(searchQuery)) {
           showResult(beach.name, beach.imageUrl, beach.description);
-          notfound = false;
+          notFound = false;
         }
       });
 
-      if (notfound) {
-        searchError();
+      if (notFound) {
+        showSearchError();
       }
     };
 
-    searchbtn.addEventListener("click", search);
-  });
+    searchBtn.addEventListener("click", search);
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+};
+
+// Initialize fetch and search setup
+fetchDataAndInitializeSearch();

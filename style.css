@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -15,19 +14,17 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #c44; 
     border-radius: 5px; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #a22; 
 }
-
 
 ::-webkit-scrollbar-track {
     background: #f1f1f1; 
 }
-
 
 nav{
     display: flex;
@@ -35,13 +32,12 @@ nav{
     justify-content: space-between;
     padding: 1rem 1rem;
     align-items: center;
-    background: linear-gradient(120deg, rgb(30, 62, 60),rgb(30, 62, 60) ,rgb(100, 90, 90));
+    background: linear-gradient(120deg, rgb(180, 30, 30), rgb(150, 20, 20), rgb(110, 10, 10));
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
 }
-
 
 #logo{
     display: flex;
@@ -58,7 +54,6 @@ nav{
     margin-left: .5rem;
     font-family: "Kaushan Script", cursive;
     font-weight: 400;
-    font-style: normal;
 }
 
 #links a{
@@ -71,21 +66,19 @@ nav{
 }
 
 #links a:hover{
-    color: yellow;
-
+    color: #ff0;
 }
 
 .searchinput{
     width: 15rem;
     border: none;
     outline: none;
-    color: rgb(5, 103, 107);
+    color: rgb(180, 20, 20);
 }
 
 ::placeholder{
-    color: rgb(5, 103, 107);
+    color: rgb(180, 20, 20);
 }
-
 
 #search{
     background-color: #fff;
@@ -94,7 +87,7 @@ nav{
 }
 
 .searchicon{
-    color: rgb(5, 103, 107) ;
+    color: rgb(180, 20, 20);
 }
 
 .btn{
@@ -102,12 +95,10 @@ nav{
     border-radius: 5px;
     border: none;
     outline: none;
-    background-color:rgb(5, 103, 107) ;
+    background-color: rgb(180, 20, 20);
     color: #fff;
     margin-left: .3rem;
 }
-
-/* Home Section */
 
 .MainSection{
     margin-top: 5rem;
@@ -121,25 +112,17 @@ nav{
     align-items: flex-start;
 }
 
-.mainpage{
-    display: flex;
-    flex-direction: column;
-}
-
 .Homecontent{
     display: flex;
-    background: linear-gradient(to right, rgb(5, 103, 107), rgba(5, 104, 107, 0.632),rgba(5, 104, 107, 0.332) ,#ffffff00);
+    background: linear-gradient(to right, rgb(180, 20, 20), rgba(180, 20, 20, 0.632), rgba(180, 20, 20, 0.332), #ffffff00);
     height: 100%;
     padding: 2rem 3rem;
-
 }
-
 
 .linkslogo{
     color: #fff;
     transition: .3s ease-out;
 }
-
 
 .linkslogo:hover{
     color: gold;
@@ -152,10 +135,10 @@ nav{
     border-radius: 2px;
     margin-bottom: 5rem;
 }
+
 .sociallinks a{
     margin-bottom: 1.5rem;
 }
-
 
 .links{
     display: flex;
@@ -171,9 +154,7 @@ nav{
     flex-direction: column;
     align-items: center;
     transition: .3s ease-out;
-    
 }
-
 
 .mainhomecontent{
     padding: 5rem 2rem;
@@ -183,9 +164,7 @@ nav{
     font-size: 5rem;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-style: normal;
     color: #fff;
-    font-weight: bolder;
     line-height: 5rem;
 }
 
@@ -195,10 +174,9 @@ nav{
     font-size: 1.2rem;
 }
 
-
 .bookbtn{
-    padding:.7rem 3rem ;
-    background-color: rgb(7, 89, 92);
+    padding: .7rem 3rem;
+    background-color: rgb(150, 20, 20);
     border: none;
     outline: none;
     color: #fff;
@@ -211,27 +189,22 @@ nav{
 }
 
 .bookbtn:hover{
-    background-color:  rgb(15, 134, 138);
+    background-color: rgb(180, 20, 20);
     box-shadow: 0 0 8px #fbfe28;
 }
 
-
-#About{
-    display: flex;
-    flex-direction: column;
+#About, #Contactus{
     width: 100%;
-    height:auto;
+    height: auto;
     padding: 4rem 5rem;
-    background: linear-gradient(to right, rgb(5, 103, 107), rgba(5, 104, 107, 0.632),rgba(5, 104, 107, 0.332) ,#ffffff00);
+    background: linear-gradient(to right, rgb(180, 20, 20), rgba(180, 20, 20, 0.632), rgba(180, 20, 20, 0.332), #ffffff00);
 }
 
-.aboutusheader{
+.aboutusheader, .contactustittle{
     font-size: 5rem;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-style: normal;
     color: #fff;
-    font-weight: bolder;
     line-height: 5rem;
 }
 
@@ -239,42 +212,10 @@ nav{
     background-color: rgba(0, 0, 0, 0.288);
     padding: 1rem 1rem;
     width: 40rem;
-    height: auto;
     border-radius: 10px;
     margin-top: 2rem;
     color: #fff;
     font-size: 1.2rem;
-}
-
-#Contactus{
-    width: 100%;
-    height: 60vh;
-    padding: 2rem 5rem;
-    background: linear-gradient(to right, rgb(5, 103, 107), rgba(5, 104, 107, 0.632),rgba(5, 104, 107, 0.332) ,#ffffff00);
-}
-
-.contactustittle{
-    font-size: 4rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: #fff;
-    font-weight: bolder;
-    line-height: 5rem;
-}
-
-
-.formsection{
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 1rem;
-    background-color: rgba(0, 0, 0, 0.288);
-}
-
-form{
-    width: 100%;
 }
 
 .labels{
@@ -291,18 +232,16 @@ form .inputval{
     padding: .3rem .5rem;
 }
 
-
 .submitmessagebtn{
     width: 100%;
     padding: .5rem 0;
     margin-top: .8rem;
     color: #fff;
-    background-color:rgb(5, 103, 107) ;
+    background-color: rgb(180, 20, 20);
     outline: none;
     border: none;
     cursor: pointer;
 }
-
 
 .Result{
     height: auto;
@@ -324,23 +263,13 @@ form .inputval{
 
 .resulttittle{
     font-size: 1.2rem;
-}
-
-.resultimg{
-    width: 100%;
-    height: auto;
-}
-
-.resulttittle{
     color: #fff;
 }
 
-
 #dropdown{
-    background-color: #55555595;
+    background-color: #80000095;
     position: absolute;
     width: 30rem;
-    height: auto;
     padding: 1rem 1rem;
     top: 100%;
     right: 1%;
@@ -359,7 +288,7 @@ form .inputval{
 #close-btn{
     padding: .5rem .5rem;
     border: none;
-    background-color: rgb(16, 152, 152);
+    background-color: rgb(180, 20, 20);
     outline: none;
     color: #fff;
     font-weight: bolder;
@@ -368,33 +297,24 @@ form .inputval{
 }
 
 #close-btn:hover{
-    background-color:  rgb(6, 95, 95);
+    background-color: rgb(150, 10, 10);
 }
 
 #resultContainer{
     width: 100%;
     margin-bottom: 1rem;
-    background-color: rgba(5, 104, 107, 0.721);
+    background-color: rgba(180, 20, 20, 0.721);
     border: 1px solid white;
     padding: .5rem .5rem;
     border-radius: 5px;
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.686);
 }
 
-
 .description{
     font-weight: bolder;
     color: #fff;
 }
 
-.search-img{
-    width: 100%;
-}
-
-.title{
-    color: #fff;
-}
-
-.notfound{
+.title, .notfound{
     color: #fff;
 }

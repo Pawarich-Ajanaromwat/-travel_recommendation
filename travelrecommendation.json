@@ -78,16 +78,29 @@
 
   "beaches": [
     {
-      "id": 1,
-      "name": "Bora Bora, French Polynesia",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIpCLkrcIpmh76zPxzW4wk8rcxWYCDMop3yXYygkwdlg&s",
-      "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
+        "id": 1,
+        "name": "Bora Bora, French Polynesia",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIpCLkrcIpmh76zPxzW4wk8rcxWYCDMop3yXYygkwdlg&s",
+        "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
     },
     {
-      "id": 2,
-      "name": "Copacabana Beach, Brazil",
-      "imageUrl": "https://images.unsplash.com/photo-1596573677494-accc8fbe89e8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29wYWNhYmFuYSUyMGJlYWNofGVufDB8fDB8fHww",
-      "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
+        "id": 2,
+        "name": "Copacabana Beach, Brazil",
+        "imageUrl": "https://images.unsplash.com/photo-1596573677494-accc8fbe89e8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29wYWNhYmFuYSUyMGJlYWNofGVufDB8fDB8fHww",
+        "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
+    },
+    {
+        "id": 3,
+        "name": "Whitehaven Beach, Australia",
+        "imageUrl": "https://cdn.pixabay.com/photo/2016/08/09/22/45/australia-1580281_1280.jpg",
+        "description": "Known for its crystal-clear waters and pristine white sands, located in the heart of the Great Barrier Reef."
+    },
+    {
+        "id": 4,
+        "name": "Anse Source d'Argent, Seychelles",
+        "imageUrl": "https://cdn.pixabay.com/photo/2016/11/22/20/03/anse-source-dargent-1850758_1280.jpg",
+        "description": "A beautiful beach famous for its pink sands, clear waters, and unique granite formations."
     }
-  ]
+]
+
 }

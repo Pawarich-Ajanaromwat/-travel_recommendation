@@ -52,6 +52,7 @@ const fetchDataAndInitializeSearch = async () => {
 
       data.countries.forEach((country) => {
         country.cities.forEach((city) => {
+          console.log("${city.name}");
           if (city.name.toLowerCase().includes(searchQuery)) {
             showResult(city.name, city.imageUrl, city.description);
             notFound = false;

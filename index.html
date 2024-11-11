@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div id="logo">
+            <i class="fa fa-plane fa-3x logo" aria-hidden="true"></i>
+            <p class="name">TravelBloom</p>
+        </div>
+        <div id="links">
+            <a href="#Home">Home</a>
+            <a href="#About">About Us</a>
+            <a href="#Contactus">Contact Us</a>
+        </div>
+        <div id="search">
+            <input id="searchinput" class="searchinput" placeholder="Enter a destination or keyword" type="text">
+            <i class="fa fa-search searchicon" aria-hidden="true"></i>
+            <button id="searchbtn" class="btn">Search</button>
+            <button id="clearbtn" class="btn">Clear</button>
+        </div>
+        <div id="dropdown">
+            <div class="dropdown-header"><button id="close-btn">X</button></div>
+            <div id="resultContainer"></div>
+        </div>
+    </nav>
+</header>
+
+<main class="MainSection">
+    <section id="Home" class="mainpage">
+        <div class="sociallinks">
+            <div class="verticalline"></div>
+            <a href="https://twitter.com/?lang=en" target="_blank" aria-label="Twitter"><i class="fa fa-twitter fa-2x linkslogo" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa fa-facebook fa-2x linkslogo" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa fa-instagram fa-2x linkslogo" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="fa fa-youtube-play fa-2x linkslogo" aria-hidden="true"></i></a>
+        </div>
+        
+        <div class="Homecontent">
+            <div class="mainhomecontent">
+                <p class="homesectionheader">Explore <br>Dream <br>Destination</p>
+                <p class="homesectiondescription">Explore unfamiliar territories, embrace diverse cultures and landscapes, while pursuing destinations that captivate the heart and ignite a sense of wonder.</p>
+                <button class="bookbtn">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="About">
+        <h2 class="aboutusheader">About Us</h2>
+        <p class="aboutustxt">
+            Welcome to TravelBloom! We are a passionate team dedicated to providing excellent travel experiences around the world. Our mission is to create unforgettable moments, emphasizing integrity, innovation, customer satisfaction, and teamwork. Explore our site to learn more about what we offer!
+        </p>
+    </section>
+
+    <section id="Contactus">
+        <h2 class="contactustitle">Contact Us</h2>
+        <div class="formsection">
+            <form action="">
+                <label class="labels" for="firstname">First Name</label><br>
+                <input class="inputval" type="text" id="firstname" name="firstname"><br>
+
+                <label class="labels" for="email">Email</label><br>
+                <input class="inputval" type="email" id="email" name="email"><br>
+
+                <label class="labels" for="message">Message</label><br>
+                <textarea class="inputval" id="message" name="message"></textarea><br>
+
+                <button class="submitmessagebtn" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<section class="Result" id="Result">
+    <!-- Optional result section for dynamically loaded content -->
+</section>
+
+<script src="travelrecommendation.js"></script>
+</body>
+</html>
